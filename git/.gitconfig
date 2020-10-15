@@ -1,0 +1,12 @@
+[user]
+	email = abhishek252167@gmail.com
+	name = Abhishek Goyal
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	history = log --graph --date=format:'%a, %d %b %Y  %H:%M:%S' --pretty=format:'%C(yellow)%h %C(bold red) %ad %C(magenta)| %s%C(auto)%d %C(bold blue)[%an]%C(auto)'
+[core]
+	autocrlf = false
